@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <!-- Botão para alternar entre temas -->
+    <button id="themeToggle" class="theme-toggle">🌙</button>
+    
+    <!-- Container principal do formulário -->
+    <div class="login-container">
+        <h1>Login</h1>
+        
+        <!-- Formulário de login -->
+        <form id="loginForm">
+            <!-- Grupo de entrada para usuário -->
+            <div class="form-group">
+                <label for="username">Usuário:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            
+            <!-- Grupo de entrada para senha -->
+            <div class="form-group">
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            
+            <!-- Botão de submissão do formulário -->
+            <button type="submit">Entrar</button>
+            
+            <!-- Link para recuperação de senha -->
+            <div class="forgot-password">
+               <p></p> <a href="#" id="forgotPassword">Esqueci minha senha</a>
+            </div>
+        </form>
+        
+        <!-- Container para mensagens de feedback -->
+        <div id="message"></div>
+    </div>
+
+    <!-- Vinculação com arquivo JavaScript -->
+    <script src="assets/script.js"></script>
+</body>
+</html>

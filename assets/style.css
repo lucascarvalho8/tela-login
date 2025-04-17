@@ -1,0 +1,103 @@
+/* Estilos gerais da página */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s; /* Transição suave para mudança de tema */
+}
+
+/* Container do formulário de login */
+.login-container {
+    background-color: white;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Estilização dos grupos de formulário */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Estilos para os inputs */
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: all 0.3s; /* Anima todas as propriedades */
+}
+
+/* Efeito de foco nos inputs */
+input:focus {
+    outline: none;
+    border-color: #1877f2;
+    box-shadow: 0 0 0 2px #e7f3ff;
+}
+
+/* Botão de submit do formulário */
+button[type="submit"] {
+    width: 105%;
+    padding: 12px;
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Estilos para o tema escuro */
+body.dark-mode {
+    background-color: #18191a;
+    color: #e4e6eb;
+}
+
+/* Ajustes do container no tema escuro */
+body.dark-mode .login-container {
+    background-color: #242526;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Botão de alternância de tema */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+/* Efeito hover no botão de tema */
+.theme-toggle:hover {
+    transform: scale(1.2);
+}
+
+/* Estilos para mensagens de feedback */
+#message {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Media query para dispositivos móveis */
+@media (max-width: 480px) {
+    .login-container {
+        margin: 20px;
+        padding: 20px;
+    }
+}
